@@ -1,2 +1,5 @@
-bind status P !git push
+bind generic P !git push
+bind generic H !git push heroku
 bind status A !git commit --amend
+bind status <Ctrl-C> !git commit --no-verify
+bind main | !git rebase -i %(commit)
