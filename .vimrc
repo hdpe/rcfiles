@@ -21,6 +21,8 @@ autocmd Filetype sh setlocal ts=4 sw=4 expandtab
 autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 autocmd Filetype json setlocal ts=2 sw=2 expandtab
 
+set showcmd
+
 filetype indent plugin on
 
 " inoremap jk <Esc>
@@ -32,10 +34,10 @@ set t_Co=256
 set autoread
 
 " Some settings to enable the theme:
-" set number
+set number
 syntax enable
 set background=dark
-let g:solarized_termcolors = 256  " New line!!
+" let g:solarized_termcolors = 256  " New line!!
 let g:solarized_termtrans = 1
 colorscheme solarized
 
